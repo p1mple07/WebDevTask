@@ -18,6 +18,11 @@
     
     border-radius: 0px 0px 50px 50px;
 }
+.playerName span:hover{
+    text-decoration: underline;
+
+
+}
 
 .flexcontainer{
     display: flex;
@@ -67,6 +72,11 @@
     height: 100px;
     width: 100px;
     border-radius: 50%;
+    
+}
+.emptycircle:hover{
+    position: relative;
+    top: -3px;
     
 }
 .first .emptycircle{
@@ -127,11 +137,24 @@
     margin: 0px 20px;
 
 }
+.theRestDiv .circle:hover{
+    position: relative;
+    top: -1px;
+
+}
 .theRestDiv .circle .name{
     position: relative;
     left: 175%;
     top: 25%;
     font-size: larger;
+    
+}
+.theRestDiv .circle .name:hover{
+    position: relative;
+    left: 175%;
+    top: 25%;
+    font-size: larger;
+    text-decoration: underline;
     
 }
 
