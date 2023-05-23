@@ -53,7 +53,7 @@ fetch('https://www.coursehubiitg.in/api/codingweek/contributions')
     var playerpointsArray = Array.from(playerpoints);
     var playernamesArray = Array.from(playernames);
 
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < lenght-3; i++) {
       playernamesArray[i].innerHTML = sortedData[i + 3].name;
       playerpointsArray[i].innerHTML = sortedData[i + 3].points;
       avatarimageArray[i].src = sortedData[i + 3].avatar;
