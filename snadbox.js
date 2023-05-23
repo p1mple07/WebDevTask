@@ -7,36 +7,35 @@ fetch('https://www.coursehubiitg.in/api/codingweek/contributions')
     var sortedData = [...data].sort((a, b) => b.points - a.points);
     var lenght = Object.keys(sortedData).length;
     for (let index = 0; index < lenght-3; index++) {
-      // const element = length[index];
-      // Create the outer div with the class "theRestDiv"
+      
       var theRestDiv = document.createElement("div");
       theRestDiv.classList.add("theRestDiv");
 
-      // Create the span with the class "sNo" and set its text content to "9"
+      
       var sNoSpan = document.createElement("span");
       sNoSpan.classList.add("sNo");
       sNoSpan.textContent = index+4;
 
-      // Create the inner div with the class "circle"
+      
       var circleDiv = document.createElement("div");
       circleDiv.classList.add("circle");
 
-      // Create the image element with the alt attribute set to "avatar" and the class "image"
+      
       var imageElement = document.createElement("img");
       imageElement.alt = "avatar";
       imageElement.classList.add("image");
 
-      // Create the span with the class "name" and set its text content to "new"
+      
       var nameSpan = document.createElement("span");
       nameSpan.classList.add("name");
       nameSpan.textContent = "new";
 
-      // Create the span with the class "points" and set its text content to "300"
+      
       var pointsSpan = document.createElement("span");
       pointsSpan.classList.add("points");
       pointsSpan.textContent = "300";
 
-      // Append the child elements to their respective parent elements
+      
       circleDiv.appendChild(imageElement);
       circleDiv.appendChild(nameSpan);
 
